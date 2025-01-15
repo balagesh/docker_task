@@ -1,1 +1,2 @@
-## Docker Test Task
+# DOCKER TASK
+### Image resizer code
