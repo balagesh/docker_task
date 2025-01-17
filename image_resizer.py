@@ -2,8 +2,11 @@ from PIL import Image
 import os
 
 
-input_folder = './input_images'
-output_folder = './output_images'
+input_folder = os.getenv('INOUT _FOLDER', 'input_images')
+output_folder = os.getnev('OUTPUT_FOLDER', 'output_images')
+
+if not os.path.exist(output_folder):
+    os.makedirs(output_folder)
 
 desired_size = (100, 100)
 
